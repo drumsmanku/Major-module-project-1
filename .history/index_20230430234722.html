@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Module Project 1 </title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="first-container">
+      <div class="text">
+        <h1>ROCK PAPER SCISSORS</h1>
+      </div>
+      <div class="two-boxes">
+        <div class="computer-score">
+          <h4>COMPUTER SCORE</h4>
+          <h1 id="comp-score">0</h1>
+        </div>
+        <div class="your-score">
+          <h4>YOUR SCORE</h4>
+          <h1 id="my-score">0</h1>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="second-main-container">
+      <div class="second-main-main-first-container ">
+        <div id="all-three-imgs" class="second-first-main-container">
+          <div id="two-btns" class="two-buttons">
+            <button id="rock" class="btn-2" onclick="choose('rock')"><img src="1.png" alt=""></button>
+            <button id="scissor" class="btn-3" onclick="choose('scissor')"><img src="2.png" alt=""></button>
+          </div>
+          <button id="paper" class="btn-1" onclick="choose('paper')"> <img src="3.png" alt=""></button>
+        </div>
+        <div class="second-second-main-container">
+          <div class="img-container">
+            <img id="rules-img" src="4.png" alt="">
+            <button id="my-btn">
+              <p>X</p><img src="x.png" alt="">
+            </button>
+          </div>
+        </div>
+      
+      </div>
+       <div id="just-a-div" class="second-main-main-second-conainer ">
+        <div id="close-everything" class="cont">
+          <div class="images-div">
+            <p id="you-picked" class="display-none">You Picked</p>
+            <img id="first-img" class="display-none" src="1.png" alt="">
+            <img id="second-img" class="display-none" src="2.png" alt="">
+            <img id="third-img" class="display-none" src="3.png" alt="">
+          </div>
+          <div class="who-won">
+            <p id="you-win" class="won display-none">YOU WIN</p>
+            <p id="against-pc" class="against display-none">Against PC</p>
+            <button id="play-again" class="play-again display-none" onclick="playAgain()">Play Again</button>
+          </div>
+          <div class="images-div-for-pc">
+            <p id="pc-picked" class="display-none">PC Picked</p>
+            <img id="fourth-img" class="display-none" src="1.png" alt="">
+            <img id="fifth-img" class="display-none" src="2.png" alt="">
+            <img id="sixth-img" class="display-none" src="3.png" alt="">
+          </div>
+        </div>
+        
+          
+       </div>
+    </div>
+    <div class="bottom-btn"><button id="rule-btn">RULES</button><a href="hurray.html"><button id="next-btn" class="display-none">NEXT</button></a></div>
+      
+    
+    
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Won</title>
+  <style>
+    body{
+      background-color: #8CC461;
+      position: relative;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container img{
+      width: 70vh;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+    .play-again{
+      background-color: white;
+      border: none;
+      color: #6B6B6B;
+      width: 10rem;
+      height: 3rem;
+      font-size: 1.3rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    #rule-btn{
+      background: none;
+      border: 3px solid white;
+      border-radius: 0.6rem;
+      height: 2rem;
+      width: 8rem;
+      font-size:1.2rem;
+      letter-spacing: 0.4rem;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 90%;
+      /* bottom: -5rem; */
+    }
+    .second-second-main-container{
+      position: absolute;
+      top: 0;
+      left: 80%;
+    }
+    .img-container{
+      position: relative;
+    }
+    #my-btn{
+      background: none;
+      border: none;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="hurray.png" alt="">
+    <button id="play-again" class="play-again" onclick="location.href='index.html'">Play Again</button>
+  </div>
+  <div class="second-second-main-container">
+    <div class="img-container">
+      <img id="rules-img" src="4.png" alt="">
+      <button id="my-btn">
+        <img src="x.png" alt="">
+      </button>
+    </div>
+  </div>
+  <button id="rule-btn">RULES</button>
+</body>
+</html>
